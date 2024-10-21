@@ -11,3 +11,5 @@ const server = createServer((request, response) => {
 dotenv.config();
 const port = process.env.PORT;
 server.listen(port);
+
+export default server;

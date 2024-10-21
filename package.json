@@ -6,8 +6,8 @@
     "scripts": {
       "test": "jest",
       "build": "webpack --config webpack.config.js",
-      "start:dev": "cross-env NODE_ENV=development nodemon src/server.ts",
-      "start:prod": "cross-env NODE_ENV=production ts-node src/server.ts"
+      "start:dev": "nodemon",
+      "start:prod": "webpack && node dist/bundle.js"
     },
     "author": "vladlutskevich",
     "license": "ISC",
