@@ -4,24 +4,26 @@
     "description": "CRUD API",
     "main": "index.js",
     "scripts": {
-      "test": "jest",
-      "build": "webpack --config webpack.config.js",
-      "start:dev": "nodemon",
-      "start:prod": "webpack && node dist/bundle.js"
+        "test": "jest --detectOpenHandles --verbose",
+        "build": "webpack --config webpack.config.js",
+        "start:dev": "nodemon",
+        "start:prod": "webpack && node dist/bundle.js"
     },
     "author": "vladlutskevich",
     "license": "ISC",
     "dependencies": {
-      "@types/uuid": "^10.0.0",
-      "cross-env": "^7.0.3",
-      "dotenv": "^16.4.5",
-      "eslint": "^9.12.0",
-      "nodemon": "^3.1.7",
-      "prettier": "^3.3.3",
-      "ts-node": "^10.9.2",
-      "ts-node-dev": "^2.0.0",
-      "typescript": "^5.6.3",
-      "uuid": "^10.0.0"
+        "@types/supertest": "^6.0.2",
+        "@types/uuid": "^10.0.0",
+        "cross-env": "^7.0.3",
+        "dotenv": "^16.4.5",
+        "eslint": "^9.12.0",
+        "nodemon": "^3.1.7",
+        "prettier": "^3.3.3",
+        "supertest": "^7.0.0",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.6.3",
+        "uuid": "^10.0.0"
     },
     "devDependencies": {
         "@types/jest": "^29.5.13",
@@ -32,4 +34,4 @@
         "webpack": "^5.95.0",
         "webpack-cli": "^5.1.4"
     }
-  }
+}
